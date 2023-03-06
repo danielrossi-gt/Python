@@ -1,0 +1,11 @@
+#Define a função principal, pois temos mais de 
+#uma função sendo definida
+def main():
+        miau(3)
+
+def miau(n):
+    for i in range(n):
+     print("Miau!") 
+
+#Chama a função principal, senão não executa nada
+main()
