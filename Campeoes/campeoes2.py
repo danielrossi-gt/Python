@@ -16,5 +16,11 @@ with open("campeoes.csv", "r") as file:
 
 #times.sort()
 
-for time in sorted(times):
-    print(time, times[time])
+#def get_value(time):
+#    return times[time]
+
+#for time in sorted(times):
+#for time in sorted(times, reverse=True):
+#for time in sorted(times, key=get_value, reverse=True):
+for time in sorted(times, key=lambda time: times[time], reverse=True):
+     print(time, times[time])
